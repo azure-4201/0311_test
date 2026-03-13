@@ -3,84 +3,368 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>viewport</title>
-    <style>
-      body {
-        background: aqua;
-      }
-      /* 화면의 너비가 0~1280px 데스크탑 */
-      @media (max-width: 1280px) {
-        body {
-          background: red;
-        }
-        h1::after {
-          content: "화면의 너비가 0~1280px 데스크탑";
-        }
-      }
-      /* 화면의 너비가 0~1024px 데스크탑 */
-      @media (max-width: 1024px) {
-        body {
-          background: orange;
-        }
-        h1::after {
-          content: "화면의 너비가 0~1024px 데스크탑";
-        }
-      }
-      /* 화면의 너비가 0~960px 노트북 */
-      @media (max-width: 960px) {
-        body {
-          background: yellow;
-        }
-        h1::after {
-          content: "화면의 너비가 0~960px 노트북";
-        }
-      }
-      /* 화면의 너비가 0~768px 테블릿 */
-      @media (max-width: 768px) {
-        body {
-          background: green;
-        }
-        h1::after {
-          content: "화면의 너비가 0~768px 테블릿";
-        }
-      }
-      /* 화면의 너비가 0~480px 모바일 */
-      @media (max-width: 480px) {
-        body {
-          background: skyblue;
-        }
-        h1::after {
-          content: "화면의 너비가 0~480px 모바일";
-        }
-      }
-    </style>
+    <title>Delta_Air</title>
+    <link rel="stylesheet" href="assets/css/font.css" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/swiper.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <script src="https://kit.fontawesome.com/fb27592f06.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <h1>화면너비</h1>
-    <p>
-      국가는 농지에 관하여 경자유전의 원칙이 달성될 수 있도록 노력하여야 하며, 농지의 소작제도는 금지된다. 여자의 근로는
-      특별한 보호를 받으며, 고용·임금 및 근로조건에 있어서 부당한 차별을 받지 아니한다. 국가안전보장에 관련되는
-      대외정책·군사정책과 국내정책의 수립에 관하여 국무회의의 심의에 앞서 대통령의 자문에 응하기 위하여
-      국가안전보장회의를 둔다. 국회의원은 현행범인인 경우를 제외하고는 회기중 국회의 동의없이 체포 또는 구금되지
-      아니한다. 새로운 회계연도가 개시될 때까지 예산안이 의결되지 못한 때에는 정부는 국회에서 예산안이 의결될 때까지
-      다음의 목적을 위한 경비는 전년도 예산에 준하여 집행할 수 있다. 대법원장은 국회의 동의를 얻어 대통령이 임명한다.
-      각급 선거관리위원회는 선거인명부의 작성등 선거사무와 국민투표사무에 관하여 관계 행정기관에 필요한 지시를 할 수
-      있다. 누구든지 체포 또는 구속을 당한 때에는 적부의 심사를 법원에 청구할 권리를 가진다. 정기회의 회기는 100일을,
-      임시회의 회기는 30일을 초과할 수 없다. 대통령이 제1항의 기간내에 공포나 재의의 요구를 하지 아니한 때에도 그
-      법률안은 법률로서 확정된다. 국가는 평생교육을 진흥하여야 한다. 선거에 관한 경비는 법률이 정하는 경우를 제외하고는
-      정당 또는 후보자에게 부담시킬 수 없다. 헌법재판소 재판관은 탄핵 또는 금고 이상의 형의 선고에 의하지 아니하고는
-      파면되지 아니한다. 국무위원은 국무총리의 제청으로 대통령이 임명한다. 행정각부의 장은 국무위원 중에서 국무총리의
-      제청으로 대통령이 임명한다. 국가안전보장회의의 조직·직무범위 기타 필요한 사항은 법률로 정한다. 국가는 전통문화의
-      계승·발전과 민족문화의 창달에 노력하여야 한다. 대통령의 선거에 관한 사항은 법률로 정한다. 교육의
-      자주성·전문성·정치적 중립성 및 대학의 자율성은 법률이 정하는 바에 의하여 보장된다. 국가는 농수산물의 수급균형과
-      유통구조의 개선에 노력하여 가격안정을 도모함으로써 농·어민의 이익을 보호한다. 명령·규칙 또는 처분이 헌법이나
-      법률에 위반되는 여부가 재판의 전제가 된 경우에는 대법원은 이를 최종적으로 심사할 권한을 가진다. 대통령은 국가의
-      안위에 관계되는 중대한 교전상태에 있어서 국가를 보위하기 위하여 긴급한 조치가 필요하고 국회의 집회가 불가능한 때에
-      한하여 법률의 효력을 가지는 명령을 발할 수 있다. 모든 국민은 법률이 정하는 바에 의하여 국방의 의무를 진다. 국가는
-      균형있는 국민경제의 성장 및 안정과 적정한 소득의 분배를 유지하고, 시장의 지배와 경제력의 남용을 방지하며,
-      경제주체간의 조화를 통한 경제의 민주화를 위하여 경제에 관한 규제와 조정을 할 수 있다. 형사피고인은 유죄의 판결이
-      확정될 때까지는 무죄로 추정된다. 모든 국민은 건강하고 쾌적한 환경에서 생활할 권리를 가지며, 국가와 국민은
-      환경보전을 위하여 노력하여야 한다.
-    </p>
+    <header id="header">
+      <div class="container header_inner">
+        <div class="logo">
+          <a href="https://ko.delta.com/kr/ko"
+            ><svg
+              width="119"
+              height="19"
+              viewBox="0 0 119 19"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <g id="Canvas" fill="none">
+                <g id="Delta Logo">
+                  <path
+                    id="Fill 23"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M 15.3193 14.9921L 11.9221 14.9921L 10.4985 11.2523L 4.59081 11.2523L 3.17354 14.9921L 0 14.9921L 6.0736 0.000732143L 6.0736 0L 9.34827 0L 15.3193 14.9921ZM 9.57821 8.75494L 7.54917 3.45642L 5.51514 8.75494L 9.57821 8.75494Z"
+                    transform="translate(103.008 1.74512)"
+                    fill="#FEFEFE"
+                  />
+                  <path
+                    id="Fill 25"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M 13.0339 0L 0 0L 0 2.59252L 4.88637 2.59252L 4.88637 14.9291L 8.14751 14.9291L 8.14751 2.59252L 13.0339 2.59252L 13.0339 0Z"
+                    transform="translate(86.4434 1.80908)"
+                    fill="#FEFEFE"
+                  />
+                  <path
+                    id="Fill 27"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M 9.50923 12.3329L 3.25687 12.3329L 3.25687 0L 0 0L 0 14.9277L 9.50923 14.9277L 9.50923 12.3329Z"
+                    transform="translate(72.4526 1.80957)"
+                    fill="#FEFEFE"
+                  />
+                  <path
+                    id="Fill 29"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M 3.24619 8.45698L 9.41308 8.45698L 9.41308 5.8652L 3.24619 5.8652L 3.24619 2.59252L 10.2172 2.59252L 10.2172 0L 0 0L 0 14.9284L 10.4436 14.9284L 10.4436 12.3344L 3.24619 12.3344L 3.24619 8.45698Z"
+                    transform="translate(53.0386 1.80896)"
+                    fill="#FEFEFE"
+                  />
+                  <path
+                    id="Fill 31"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M 0 14.9284L 5.13137 14.9284C 10.4023 14.9284 13.5488 12.1228 13.5488 7.46346C 13.5488 2.80411 10.4023 0 5.13137 0L 0 0L 0 14.9284ZM 3.24316 2.59253L 5.12763 2.59253C 8.55044 2.59253 10.2611 4.32771 10.2611 7.46348C 10.2611 10.597 8.55044 12.3344 5.12763 12.3344L 3.24316 12.3344L 3.24316 2.59253Z"
+                    transform="translate(31.7183 1.80884)"
+                    fill="#FEFEFE"
+                  />
+                  <path
+                    id="Fill 35"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M 11.4087 0L 11.4087 0.000732143L 11.4079 0L 0 4.95661L 11.4087 4.95661L 17.3598 4.95661L 22.8166 4.95661L 11.4087 0Z"
+                    transform="translate(0 13.7822)"
+                    fill="#FEFEFE"
+                  />
+                  <path
+                    id="Fill 33"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M 10.5725 11.5071L 21.1422 16.7383L 10.5725 0L 10.5725 0.00439286L 10.5718 0L 0 16.7383L 10.5725 11.48L 10.5725 11.5071Z"
+                    transform="translate(0.835938 0)"
+                    fill="#FEFEFE"
+                  />
+                </g>
+              </g>
+            </svg>
+          </a>
+        </div>
+        <!-- //logo -->
+        <nav class="nav">
+          <ul class="gnb">
+            <li><a href="#">예약</a></li>
+            <li><a href="#">체크인</a></li>
+            <li><a href="#">나의항공</a></li>
+            <li><a href="#">항공편</a></li>
+            <li><a href="#">여행정보</a></li>
+            <li><a href="#">마일즈</a></li>
+            <li><a href="#">도움말</a></li>
+          </ul>
+          <!-- //gnb -->
+          <ul class="lnb">
+            <li><a href="#">회원가입</a></li>
+            <li class="login"><a href="#">로그인</a></li>
+            <li>
+              <a href="#"><i class="fa-regular fa-bell"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </li>
+          </ul>
+          <!-- //lnb -->
+        </nav>
+        <!-- //nav -->
+      </div>
+    </header>
+    <!-- //header -->
+    <div id="baner_bg">
+      <div id="banner">
+        <div class="swiper banner_hero">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="assets/img/onboard-safety-infographic2-1600.jpg" alt="메인 배너" />
+              <div class="banner_txt">
+                <h1>새로운 서비스<br />기준을 마련하였습니다.</h1>
+                <p>여행 여정의 모든 단계에서 Delta Care Standard 서비스를 누릴 수 있습니다.</p>
+                <div class="more">방법 알아보기</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/wf-3682701-1600x624.webp" alt="메인 배너" />
+              <div class="banner_txt">
+                <h1>새로운 서비스<br />기준을 마련하였습니다.</h1>
+                <p>여행 여정의 모든 단계에서 Delta Care Standard 서비스를 누릴 수 있습니다.</p>
+                <div class="more">방법 알아보기</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/hero-bg-03.jpg" alt="메인 배너" />
+              <div class="banner_txt">
+                <h1>새로운 서비스<br />기준을 마련하였습니다.</h1>
+                <p>여행 여정의 모든 단계에서 Delta Care Standard 서비스를 누릴 수 있습니다.</p>
+                <div class="more">방법 알아보기</div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <!-- //banner -->
+      <div id="menu">
+        <div class="container menu_inner">
+          <ul class="icon_menu">
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-bed"></i>
+                <span>호텔둘러보기</span>
+                <i class="fa-solid fa-angle-right"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-car"></i>
+                <span>렌터카</span>
+                <i class="fa-solid fa-angle-right"></i>
+              </a>
+            </li>
+          </ul>
+          <ul class="fee">
+            <li>
+              <a href="#">
+                <span>업데이트된 수하물 및 여행 수수료</span>
+                <i class="fa-solid fa-angle-right"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- //banner menu -->
+    </div>
+    <!-- //banner_bg -->
+    <main id="main">
+      <div class="container">
+        <h3 class="small_title">델타 고객 경험</h3>
+        <h1 class="title">귀하의 여정 전반에 대한 고객 지원</h1>
+        <section class="content1">
+          <div class="box_bg">
+            <div class="box_img">
+              <img src="assets/img/icon-flight-changes-1000.jpg" alt="비행아이콘" />
+            </div>
+            <div class="box_txt">
+              <h4>항공편을 취소 또는 변경할 수 있나요?</h4>
+              <p>
+                궁금한 점이 많으실 것으로 생각됩니다. 수수료 면제 절차 간소화에 대해 알아보고 예정된 항공편이 규정에 해당되는지 확인하시길 바랍니다.
+              </p>
+            </div>
+          </div>
+          <div class="box_bg">
+            <div class="box_img">
+              <img src="assets/img/icon-ecredit-1000.jpg" alt="티켓아이콘" />
+            </div>
+            <div class="box_txt">
+              <h4>어떻게 내 항공편을 변경하고 전자 크레딧을 확인하나요?</h4>
+              <p>
+                여행이 코로나바이러스의 영향을 받은 경우 항공편을 취소 또는 변경할 수 있습니다. 델타항공의 단계별 안내에 따라 여행 변경 방법을 알아보고 전자 크레딧을 사용하여 재예약하시기 바랍니다.
+              </p>
+            </div>
+          </div>
+          <div class="box_bg">
+            <div class="box_img">
+              <img src="assets/img/icon-bell-1000.jpg" alt="종아이콘" />
+            </div>
+            <div class="box_txt">
+              <h4>최신 여행 업데이트란 무엇인가요?</h4>
+              <p>
+                궁금한 점이 많으실 것으로 생각됩니다. 수수료 면제 절차 간소화에 대해 알아보고 예정된 항공편이 규정에 해당되는지 확인하시길 바랍니다.
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- //content1 -->
+        <section class="content2">
+          <div class="box_bg">
+            <div class="box_img">
+              <img src="assets/img/airplane-sea-boeing-snow-1400.jpg" alt="비행이미지" />
+            </div>
+            <div class="box_txt">
+              <h4>여행 서비스가 변경됩니다</h4>
+              <p>
+                델타항공이 승객 여러분의 안전을 위해 CDC 및 WHO와 긴밀하게 협조하면서 어떻게 여행 서비스를 지속적으로 평가하고 조정하는지 확인하실 수 있습니다.
+              </p>
+            </div>
+          </div>
+          <div class="box_bg">
+            <div class="box_img">
+              <img src="assets/img/delta-aircraft-cleaning-hand-1200.jpg" alt="델타이미지" />
+            </div>
+            <div class="box_txt">
+              <h4>승객 여러분을 안전하게 모시기 위해 노력합니다</h4>
+              <p>
+                델타항공은 승객 여러분이 청결한 환경에서 안전하고 건강하게 여행하실 수 있도록 서비스를 제공하기 위해 최선을 다하고 있습니다. 고객과 직원을 배려하는 것이 델타항공의 최우선 과제입니다.
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- //content2 -->
+        <section class="content3">
+          <div class="bottombox_bg">
+            <div class="bottombox_img">
+              <img src="assets/img/wf-3175001-02-1050x600.avif" alt="앱아이콘" />
+            </div>
+            <div class="bottombox_txt">
+              <h4>델타와 함께 여행할 수 있는 곳, 믿고 예약하세요</h4>
+              <p>델타항공의 전체 네트워크를 살펴보고 새로운 대화형 노선 지도와 함께 더 많은 목적지를 발견하세요. 고객님이 준비되는 순간 델타도 준비됩니다. 델타항공은 광범위하게 변경 수수료를 면제하고 있으며, 무엇보다 항공권을 변경해야 하는 경우에도 항공권의 가치는 소멸되지 않으니 안심하시기 바랍니다.</p>
+            </div>
+          </div>
+          <div class="bottombox_bg">
+            <div class="bottombox_img">
+              <img src="assets/img/fda-homepage-700x425.avif" alt="앱아이콘" />
+            </div>
+            <div class="bottombox_txt">
+              <h4>필요한 모든 혜택을 한 곳에 보관하세요</h4>
+              <p>
+                플라이 델타 앱을 다운로드하여 체크인, 항공편 현황 추적, 여행 변경, 실시간 상담원과의 채팅 등을 할 수
+                있습니다. 항공편 업데이트 알림을 받아보고, 터치스크린 셀프 서비스 체크인 기기를 이용하지 않고도 모바일 탑승권을 이용하실 수 있습니다.모바일 탑승권을 이용하실 수 있습니다.
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- //content3 -->
+      </div>
+    </main>
+    <!-- //main -->
+    <footer id="footer">
+      <div class="container footer">
+        <h1>주제 검색...<i class="fa-solid fa-magnifying-glass-plus"></i></h1>
+        <div class="sub_menu">
+          <span>인기주제어:</span>
+          <span><a href="#">도움말</a></span>
+          <span><a href="#">델타 지도 찾기</a></span>
+          <span><a href="#">전자 크레딧</a></span>
+        </div>
+        <div class="footer_menu">
+          <ul>
+            <li class="firstmenu">회사소개<i class="fa-solid fa-angle-down"></i></li>
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">채용정보</a></li>
+            <li><a href="#">뉴스허브</a></li>
+            <li><a href="#">투자자 관계(IR)</a></li>
+            <li><a href="#">출장여행</a></li>
+            <li><a href="#">여행사</a></li>
+            <li><a href="#">모바일앱</a></li>
+          </ul>
+          <ul>
+            <li class="firstmenu">고객 서비스<i class="fa-solid fa-angle-down"></i></li>
+            <li><a href="#">도움말</a></li>
+            <li><a href="#">트위터로 문의</a></li>
+            <li><a href="#">의견/고객의 말씀</a></li>
+          </ul>
+          <ul>
+            <li class="firstmenu">사이트 지원<i class="fa-solid fa-angle-down"></i></li>
+            <li><a href="#">로그인 도움</a></li>
+            <li><a href="#">사이트맵</a></li>
+            <li><a href="#">브라우저 호환성</a></li>
+            <li><a href="#">접근성</a></li>
+            <li><a href="#">예약정보</a></li>
+          </ul>
+          <ul>
+            <li class="firstmenu">정책<i class="fa-solid fa-angle-down"></i></li>
+            <li><a href="#">고객 약속</a></li>
+            <li><a href="#">활주로 지체 대책</a></li>
+            <li><a href="#">법적 고지</a></li>
+            <li><a href="#">지속 가능성</a></li>
+            <li><a href="#">운송 계약</a></li>
+            <li><a href="#">쿠키/개인정보 보호정책</a></li>
+            <li><a href="#">인신 매매 성명서</a></li>
+            <li><a href="#">항공기 등록</a></li>
+            <li><a href="#">손해배상</a></li>
+            <li><a href="#">고객 서비스 및 비상 대책</a></li>
+          </ul>
+        </div>
+        <ul class="delta_desc">
+          <li>© 2020 Delta Air Lines, Inc. | 다른 항공사의 항공편이 여행에 포함될 수도 있습니다.</li>
+          <li>
+            전체 서비스 내용과 스카이마일스 혜택은 약관을 기준으로 합니다. 특정 혜택별 상세정보 확인하고
+            <span>스카이마일스 멤버십 안내서 및 프로그램 규정</span>보기
+          </li>
+        </ul>
+        <div class="footer_sns">
+          <li>
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-globe"></i><span>한국,한국어</span></a>
+          </li>
+          <li><a href="#">English</a></li>
+        </div>
+      </div>
+    </footer>
+    <!-- //footer -->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".banner_hero", {
+        spaceBetween: 30,
+      effect: "fade",
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      });
+    </script>
   </body>
 </html>

@@ -1,0 +1,396 @@
+/* layout */
+#header {
+  width: 100%;
+  background: #11172b;
+}
+#banner_bg {
+  width: 100%;
+}
+#main {
+  margin-top: 50px;
+}
+#footer {
+  width: 100%;
+  background: #11172b;
+  margin-top: 50px;
+  padding: 50px 0;
+  /* p50-0 */
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  /* background: rgba(0, 0, 0, 0.25); */
+}
+
+/* header */
+.header_inner {
+  display: flex;
+  height: 63px;
+  align-items: center;
+}
+.logo {
+  margin-right: 30px;
+}
+.logo svg g path {
+  transition: fill 0.2s ease-out;
+}
+
+.logo:hover svg g path {
+  fill: #e51937;
+}
+.nav {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav .gnb {
+  display: flex;
+}
+.nav .gnb li {
+  padding: 0 25px;
+}
+.nav .gnb li a {
+  display: block;
+  padding: 18px 0;
+  font-size: 14px;
+  font-weight: 800;
+  color: #fff;
+  position: relative;
+}
+.nav .gnb li a::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  background: #e51937;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  /* opacity: 0; */
+  transition: all 0.2s ease-in-out;
+}
+.nav .gnb li a:hover::after {
+  width: 100%;
+  /* opacity: 1; */
+}
+.nav .gnb li a:hover {
+  /* border-bottom: 3px solid #e51937;
+  margin-bottom: -3px; */
+}
+.nav .lnb {
+  display: flex;
+}
+.nav .lnb li {
+}
+.nav .lnb li a {
+  padding: 10px;
+  font-size: 13px;
+  font-weight: 800;
+  color: #fff;
+}
+.nav .lnb li a:hover {
+  color: #e51937;
+}
+
+.nav .lnb li.login a {
+  background: #e51937;
+  border-radius: 10px;
+}
+
+.nav .lnb li.login a:hover {
+  background: #98012e;
+  color: #fff;
+}
+
+/* banner_bg */
+/* banner */
+#banner {
+  width: 100%;
+  position: relative;
+}
+#banner img {
+  width: 100%;
+}
+/* banner_txt */
+.banner_txt {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+}
+.banner_txt h1 {
+  font-size: 3.5em;
+  /* font-size: 4vw; */
+  /* 폰트는 반응형에 따라 바뀌는 것을 추천하지 않는다. */
+  /* 상황에 따라 반응형에 맞춰서 하지만 */
+  /* 보통은 폰트 사이즈는 정해두고 사용한다. */
+  /* vh 는 h값을 기준으로 */
+  /* vw 는 w값을 기준으로 */
+  /* rem은 최고부모의 기준으로 */
+  /* em은 직계부모의 기준으로(직계부모의 기준 값이 있을때) */
+  color: #fff;
+  text-shadow: 2px 2px 2px #000;
+  line-height: 1.2;
+}
+.banner_txt p {
+  font-size: 1.6em;
+  color: #fff;
+  width: 60%;
+  line-height: 1.3;
+  margin: 10px 0;
+}
+.banner_txt .more {
+  color: #fff;
+  /* width: 10%;
+  height: 50px; */
+  width: 180px;
+  height: 45px;
+  background: #e51937;
+  /* 버튼은 반응형에 따라 크기가 줄어들일이 별로 없기 때문에 */
+  /* 고정값을 주는 것이 좋다 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: backgroud-color 0.3s;
+}
+.banner_txt .more:hover {
+  background: #98012e;
+}
+
+/* banner_menu */
+#menu {
+  width: 100%;
+  background: #11172b;
+  font-size: 15px;
+}
+.menu_inner {
+  display: flex;
+  justify-content: space-between;
+}
+.icon_menu {
+  display: flex;
+}
+.icon_menu li {
+  margin-right: 20px;
+  padding: 30px 0;
+}
+.icon_menu li a {
+  color: #fff;
+}
+.icon_menu li a span {
+  padding: 0 5px;
+}
+.icon_menu li a:hover {
+  color: #e51937;
+}
+.fee {
+}
+.fee li {
+  padding: 30px 0;
+}
+.fee li a {
+  color: #fff;
+}
+.fee li a:hover {
+  color: #e51937;
+}
+.fee li a span {
+  padding: 0 5px;
+}
+
+/* main */
+.small_title {
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.title {
+  font-size: 52px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1;
+}
+/* content1 */
+.content1 {
+  width: 100%;
+  display: flex;
+  gap: 2%;
+  margin-top: 40px;
+}
+.box_bg {
+  flex: 1;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  background: #ddd;
+}
+.box_img {
+  width: 100%;
+}
+.box_img img {
+  width: 100%;
+}
+.box_txt {
+  width: 100%;
+  /* height:200px 
+  p의 텍스트 길이가 다 다르기 때문에 임시로 height 값을 넣었는데
+  p의 overflow: hidden;값과 text-overflow: ellipsis; 값으로
+  생략하기 때문에 의미가 없어져 height을 지워준다.
+  height값을 지우지 않고 설정을 그대로 두는 경우
+  overflow: hidden;값과 text-overflow: ellipsis; 값으로
+  생략되어야 하는 p가 넘치는 부분은 다시 보이게 되므로 주의.
+  */
+  padding: 5%;
+  box-sizing: border-box;
+}
+.box_txt h4 {
+  margin-bottom: 10px;
+}
+.box_txt p {
+  max-height: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+/* content2 */
+.content2 {
+  width: 100%;
+  display: flex;
+  gap: 2%;
+  margin-top: 40px;
+}
+/* content3 */
+.content3 {
+  margin-top: 40px;
+}
+.bottombox_bg {
+  width: 100%;
+  display: flex;
+  background: #ddd;
+  margin-bottom: 20px;
+}
+.bottombox_img {
+  width: 35%;
+}
+.bottombox_img img {
+  width: 100%;
+}
+.bottombox_txt {
+  width: 65%;
+
+  padding: 3%;
+  box-sizing: border-box;
+}
+.bottombox_txt h4 {
+  margin-bottom: 10px;
+}
+
+/* footer */
+#footer h1 {
+  font-size: 40px;
+  font-weight: normal;
+  color: #fff;
+  text-align: center;
+}
+/* sub_menu */
+.sub_menu {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+}
+.sub_menu span {
+  font-weight: 800;
+  padding: 0 20px;
+  color: #999;
+}
+.sub_menu span a {
+  color: #fff;
+  font-weight: normal;
+}
+/* footer_menu */
+.footer_menu {
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.footer_menu ul {
+  flex: 1;
+}
+.footer_menu ul li {
+  color: #fff;
+  margin-bottom: 15px;
+}
+.footer_menu ul .firstmenu {
+}
+.footer_menu ul .firstmenu i {
+  display: none;
+}
+.footer_menu ul li a {
+  color: #fff;
+}
+/* delta_desc */
+.delta_desc {
+  font-size: 13px;
+  text-align: center;
+  color: #999;
+  margin-top: 80px;
+}
+.delta_desc li {
+  line-height: 23px;
+  margin-bottom: 10px;
+}
+.delta_desc li span {
+  color: #fff;
+}
+/* footer_sns */
+.footer_sns {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.footer_sns li {
+  width: 33%;
+  text-align: center;
+  position: relative;
+}
+.footer_sns li a {
+  color: #fff;
+}
+
+.footer_sns li:nth-child(1) a {
+  font-size: 26px;
+}
+.footer_sns li:nth-child(2) a {
+  vertical-align: -10px;
+}
+.footer_sns li:nth-child(2) a .fa-globe {
+  font-size: 26px;
+}
+.footer_sns li:nth-child(2) a span {
+  vertical-align: 3px;
+  padding-left: 10px;
+}
+.footer_sns li:nth-child(3) a {
+  font-weight: 800;
+  vertical-align: -7px;
+}
+.footer_sns li::after {
+  content: "";
+  width: 1px;
+  height: 10px;
+  position: absolute;
+  background: #fff;
+  top: 15px;
+  right: 0;
+}
+.footer_sns li:nth-child(3)::after {
+  display: none;
+}
